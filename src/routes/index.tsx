@@ -374,7 +374,7 @@ function CaptureScreen({
             </>}
             <div className="capture-actions">
               <span>{hasScanned ? "Scan simulation complete" : "Drop a photo anywhere to add your room"}</span>
-              <Button type="button" size="sm" onClick={() => photoInput.current?.click()}><ImagePlus /> Add photo</Button>
+              <Button type="button" size="sm" onClick={() => inputRef.current?.click()}><ImagePlus /> Add photo</Button>
             </div>
           </div>
           <input ref={inputRef} className="sr-only" type="file" accept="image/*" aria-label="Upload a room photo" onChange={(event) => onSelectPhoto(event.target.files?.[0])} />
@@ -481,7 +481,7 @@ function WizardScreen({
 
 function ActivityIcon({ index }: { index: number }) {
   const icons: LucideIcon[] = [Armchair, Heart, Waves, Lightbulb, ShieldCheck, Leaf];
-  const Icon = icons[index % icons.length];
+  const Icon = icons[index % icons.length] ?? Armchair;
   return <Icon size={15} aria-hidden="true" />;
 }
 
