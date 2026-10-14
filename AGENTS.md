@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Keep DecorHub’s onboarding and recommendation generation client-side, using controlled answer state and browser storage, because the approved experience requires no external account, AI service, or backend.
