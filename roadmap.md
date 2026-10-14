@@ -1,0 +1,4 @@
+- [ ] Complete the seven-step room intake, validation, editing, and photo handling.
+- [ ] Persist entered answers and the selected photo for the current design session.
+- [ ] Generate personalized rule-based room recommendations within the INR budget, with costs, alternatives, safety, and future needs.
+- [ ] Add review/edit, report export/print, and verify the main journey and responsive preview.
